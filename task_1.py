@@ -8,7 +8,7 @@ import random
 
 numbers = [random.randint(1, 1000) for _ in range(10000)]
 
-with open("numbers.txt", "a") as file_obj:
+with open("numbers.txt", "w") as file_obj:
     for number in numbers:
         file_obj.write(str(number) + "\n")
 
